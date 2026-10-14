@@ -44,6 +44,8 @@ resolution. The installer is self-contained: it carries its own ffmpeg.
 
 Mirrors: **GitHub** `incomparableus-lang/CamBridge` · **GitVerse** `MEdb/CamBridge`.
 
+Release notes, checksums and known limitations: [RELEASES.md](RELEASES.md).
+
 For unattended deployment:
 
 ```
