@@ -445,9 +445,9 @@ namespace CamBridge.Core
         {
             StringWriter a = new StringWriter();
             a.Write("-hide_banner -loglevel warning ");
-            a.Write("-f dshow -video_size {0}x{1} -framerate {2} -i video=\"{3}\" ",
-                _width, _height, _srcFps, _device);
-            a.Write("-pix_fmt bgra -f rawvideo -");
+            a.Write("-f dshow -framerate {0} -i video=\"{1}\" ", _srcFps, _device);
+            a.Write("-vf scale={0}:{1}:force_original_aspect_ratio=decrease,pad={0}:{1}:(ow-iw)/2:(oh-ih)/2:black "
+                + "-pix_fmt bgra -f rawvideo -", _width, _height);
             return a.ToString();
         }
 
@@ -810,7 +810,7 @@ namespace CamBridge.Core
             try
             {
                 string args = enabled
-                    ? "/Create /TN \"" + TaskName + "\" /TR \"" + exePath + "\" /SC ONLOGON /RL LIMITED /F"
+                    ? "/Create /TN \"" + TaskName + "\" /TR \"'" + exePath + "'\" /SC ONLOGON /RL LIMITED /F"
                     : "/Delete /TN \"" + TaskName + "\" /F";
                 ProcessStartInfo psi = new ProcessStartInfo("schtasks.exe", args);
                 psi.UseShellExecute = false;
