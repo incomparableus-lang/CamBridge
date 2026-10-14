@@ -1,0 +1,252 @@
+=== ru  RTL=False ===
+  menu_settings            Настройки...
+  menu_restart             Перезапустить мост
+  menu_autostart           Автозапуск при входе в Windows
+  menu_logs                Открыть папку с логами
+  menu_exit                Выход
+  tray_status_active       Камера активна · захват {0} кадр/с
+  tray_status_stopped      Состояние: мост не запущен
+  balloon_not_configured   CamBridge не настроен
+  settings_title           CamBridge — настройки
+  lbl_device               Камера (DirectShow):
+  lbl_resolution           Разрешение:
+  lbl_fps                  Частота (fps):
+  lbl_camera_name          Имя виртуальной камеры:
+  lbl_autostart            Запускать мост при входе в Windows
+  lbl_language             Язык:
+  btn_refresh              Обновить
+  btn_save                 Сохранить
+  btn_cancel               Отмена
+  btn_browse               Обзор...
+  btn_test                 Проверить
+  no_cameras               (камеры DirectShow не найдены — проверьте подключение)
+  test_ok                  виртуальная камера создана
+  setup_title              Установка CamBridge
+  setup_page1_title        CamBridge — установка виртуальной камеры
+  setup_page1_body         CamBridge делает обычную DirectShow-камеру видимой в приложениях, кото...
+  setup_page2_title        Выбор камеры
+  setup_page3_title        Готово
+  setup_step               Шаг {0} из 3
+  btn_next                 Далее
+  btn_back                 Назад
+  btn_finish               Готово
+  inst_mf                  Установка виртуальной камеры (Media Foundation)...
+  inst_done                Установлено.
+  err_msi                  Не удалось установить компонент виртуальной камеры (код msiexec {0}).
+  err_vc_download          Не удалось скачать Visual C++ Runtime. Проверьте интернет.
+  uninst_title             Удаление CamBridge
+  uninst_question          Удалить CamBridge?
+  uninst_body              Будет удалён мост и виртуальная камера. Сама камера и её драйвер остан...
+  uninst_error             Ошибка при удалении:
+  arp_name                 CamBridge (виртуальная камера)
+
+=== be  RTL=False ===
+  menu_settings            Налады...
+  menu_restart             Перазапусціць мост
+  menu_autostart           Аўтазапуск пры ўходзе ў Windows
+  menu_logs                Адкрыць папку з журналамі
+  menu_exit                Выхад
+  tray_status_active       Камера актыўная · захват {0} кадра/с
+  tray_status_stopped      Статус: мост не запушчаны
+  balloon_not_configured   CamBridge не наладжаны
+  settings_title           CamBridge — налады
+  lbl_device               Камера (DirectShow):
+  lbl_resolution           Дазрэшчэнне:
+  lbl_fps                  Частата (fps):
+  lbl_camera_name          Назва віртуальнай камеры:
+  lbl_autostart            Запускаць мост пры ўходзе ў Windows
+  lbl_language             Мова:
+  btn_refresh              Абнавіць
+  btn_save                 Захаваць
+  btn_cancel               Скасаваць
+  btn_browse               Прагляд...
+  btn_test                 Праверыць
+  no_cameras               (камеры DirectShow не знойдзена — праверце падключэнне)
+  test_ok                  віртуальная камера створана
+  setup_title              Устаноўка CamBridge
+  setup_page1_title        CamBridge — устаноўка віртуальнай камеры
+  setup_page1_body         CamBridge робіць звычайную DirectShow-камеру бачнай у праграмах, якія ...
+  setup_page2_title        Выбар камеры
+  setup_page3_title        Гатова
+  setup_step               Крок {0} з 3
+  btn_next                 Далей
+  btn_back                 Назад
+  btn_finish               Гатова
+  inst_mf                  Устаноўка віртуальнай камеры (Media Foundation)...
+  inst_done                Устаноўлена.
+  err_msi                  Не ўдалося ўсталяваць кампанент віртуальнай камеры (код msiexec {0}).
+  err_vc_download          Не ўдалося спампаваць Visual C++ Runtime. Праверце інтэрнэт.
+  uninst_title             Выдаленне CamBridge
+  uninst_question          Выдаліць CamBridge?
+  uninst_body              Будзе выдалены мост і віртуальная камера. Сама камера і яе драйвер зас...
+  uninst_error             Памылка пры выдаленні:
+  arp_name                 CamBridge (віртуальная камера)
+
+=== ko  RTL=False ===
+  menu_settings            설정...
+  menu_restart             브리지 다시 시작
+  menu_autostart           Windows 로그인 시 자동 시작
+  menu_logs                로그 폴더 열기
+  menu_exit                종료
+  tray_status_active       카메라 활성 · 캡처 {0}프레임/초
+  tray_status_stopped      상태: 브리지 실행 중이 아님
+  balloon_not_configured   CamBridge가 설정되지 않았습니다
+  settings_title           CamBridge — 설정
+  lbl_device               카메라 (DirectShow):
+  lbl_resolution           해상도:
+  lbl_fps                  프레임 속도 (fps):
+  lbl_camera_name          가상 카메라 이름:
+  lbl_autostart            Windows 로그인 시 브리지 시작
+  lbl_language             언어:
+  btn_refresh              새로 고침
+  btn_save                 저장
+  btn_cancel               취소
+  btn_browse               찾아보기...
+  btn_test                 테스트
+  no_cameras               (DirectShow 카메라를 찾을 수 없습니다. 연결을 확인하세요)
+  test_ok                  가상 카메라가 생성되었습니다
+  setup_title              CamBridge 설치
+  setup_page1_title        CamBridge — 가상 카메라 설치
+  setup_page1_body         CamBridge는 Media Foundation를 사용하는 앱(카메라, Teams, Zoom, 브라우저)에서 일반 Direc...
+  setup_page2_title        카메라 선택
+  setup_page3_title        완료
+  setup_step               {0}단계 / 3
+  btn_next                 다음
+  btn_back                 뒤로
+  btn_finish               완료
+  inst_mf                  가상 카메라(Media Foundation) 설치 중...
+  inst_done                설치 완료.
+  err_msi                  가상 카메라 구성 요소를 설치하지 못했습니다(msiexec 코드 {0}).
+  err_vc_download          Visual C++ Runtime을 다운로드하지 못했습니다. 인터넷을 확인하세요.
+  uninst_title             CamBridge 제거
+  uninst_question          CamBridge를 제거할까요?
+  uninst_body              브리지와 가상 카메라가 제거됩니다. 실제 카메라와 드라이버는 그대로 유지됩니다.
+  uninst_error             제거 중 오류:
+  arp_name                 CamBridge (가상 카메라)
+
+=== fa  RTL=True ===
+  menu_settings            تنظیمات...
+  menu_restart             راه‌اندازی مجدد پل
+  menu_autostart           اجرای خودکار هنگام ورود به ویندوز
+  menu_logs                باز کردن پوشهٔ گزارش‌ها
+  menu_exit                خروج
+  tray_status_active       دوربین فعال است · دریافت {0} فریم بر ثانیه
+  tray_status_stopped      وضعیت: پل اجرا نشده است
+  balloon_not_configured   CamBridge پیکربندی نشده است
+  settings_title           CamBridge — تنظیمات
+  lbl_device               دوربین (DirectShow):
+  lbl_resolution           وضوح:
+  lbl_fps                  نرخ فریم (fps):
+  lbl_camera_name          نام دوربین مجازی:
+  lbl_autostart            اجرای پل هنگام ورود به ویندوز
+  lbl_language             زبان:
+  btn_refresh              تازه‌سازی
+  btn_save                 ذخیره
+  btn_cancel               لغو
+  btn_browse               مرور...
+  btn_test                 آزمایش
+  no_cameras               (دوربین DirectShow یافت نشد — اتصال را بررسی کنید)
+  test_ok                  دوربین مجازی ساخته شد
+  setup_title              نصب CamBridge
+  setup_page1_title        CamBridge — نصب دوربین مجازی
+  setup_page1_body         CamBridge دوربین معمولی DirectShow را در برنامه‌هایی که از Media Found...
+  setup_page2_title        انتخاب دوربین
+  setup_page3_title        پایان
+  setup_step               مرحلهٔ {0} از ۳
+  btn_next                 بعدی
+  btn_back                 بازگشت
+  btn_finish               پایان
+  inst_mf                  نصب دوربین مجازی (Media Foundation)...
+  inst_done                نصب شد.
+  err_msi                  نصب مؤلفهٔ دوربین مجازی ممکن نشد (کد msiexec {0}).
+  err_vc_download          دانلود Visual C++ Runtime ممکن نشد. اتصال اینترنت را بررسی کنید.
+  uninst_title             حذف CamBridge
+  uninst_question          CamBridge حذف شود؟
+  uninst_body              پل و دوربین مجازی حذف می‌شوند. دوربین اصلی و درایور آن دست‌نخورده باقی...
+  uninst_error             خطا هنگام حذف:
+  arp_name                 CamBridge (دوربین مجازی)
+
+=== zh  RTL=False ===
+  menu_settings            设置...
+  menu_restart             重启桥接
+  menu_autostart           登录 Windows 时自动启动
+  menu_logs                打开日志文件夹
+  menu_exit                退出
+  tray_status_active       摄像头已启用 · 采集 {0} 帧/秒
+  tray_status_stopped      状态：桥接未运行
+  balloon_not_configured   CamBridge 未配置
+  settings_title           CamBridge — 设置
+  lbl_device               摄像头 (DirectShow)：
+  lbl_resolution           分辨率：
+  lbl_fps                  帧率 (fps)：
+  lbl_camera_name          虚拟摄像头名称：
+  lbl_autostart            登录 Windows 时启动桥接
+  lbl_language             语言：
+  btn_refresh              刷新
+  btn_save                 保存
+  btn_cancel               取消
+  btn_browse               浏览...
+  btn_test                 测试
+  no_cameras               (未找到 DirectShow 摄像头 — 请检查连接)
+  test_ok                  虚拟摄像头已创建
+  setup_title              安装 CamBridge
+  setup_page1_title        CamBridge — 安装虚拟摄像头
+  setup_page1_body         CamBridge 让普通 DirectShow 摄像头在使用 Media Foundation 的应用中可见：“相机”、Teams、Zoo...
+  setup_page2_title        选择摄像头
+  setup_page3_title        完成
+  setup_step               第 {0} 步，共 3 步
+  btn_next                 下一步
+  btn_back                 上一步
+  btn_finish               完成
+  inst_mf                  正在安装虚拟摄像头（Media Foundation）…
+  inst_done                已安装。
+  err_msi                  无法安装虚拟摄像头组件（msiexec 代码 {0}）。
+  err_vc_download          无法下载 Visual C++ Runtime。请检查网络。
+  uninst_title             卸载 CamBridge
+  uninst_question          要卸载 CamBridge 吗？
+  uninst_body              将移除桥接和虚拟摄像头。摄像头本身及其驱动不会受到影响。
+  uninst_error             卸载时出错：
+  arp_name                 CamBridge（虚拟摄像头）
+
+=== hi  RTL=False ===
+  menu_settings            सेटिंग्स...
+  menu_restart             ब्रिज पुनः प्रारंभ करें
+  menu_autostart           Windows में लॉगिन करने पर स्वतः चालू करें
+  menu_logs                लॉग फ़ोल्डर खोलें
+  menu_exit                बाहर निकलें
+  tray_status_active       कैमरा सक्रिय · कैप्चर {0} फ़्रेम प्रति सेकंड
+  tray_status_stopped      स्थिति: ब्रिज चालू नहीं है
+  balloon_not_configured   CamBridge कॉन्फ़िगर नहीं है
+  settings_title           CamBridge — सेटिंग्स
+  lbl_device               कैमरा (DirectShow):
+  lbl_resolution           रिज़ॉल्यूशन:
+  lbl_fps                  फ़्रेम दर (fps):
+  lbl_camera_name          वर्चुअल कैमरा नाम:
+  lbl_autostart            Windows में लॉगिन करने पर ब्रिज चालू करें
+  lbl_language             भाषा:
+  btn_refresh              ताज़ा करें
+  btn_save                 सहेजें
+  btn_cancel               रद्द करें
+  btn_browse               ब्राउज़ करें...
+  btn_test                 जाँचें
+  no_cameras               (DirectShow कैमरा नहीं मिला — कनेक्शन जाँचें)
+  test_ok                  वर्चुअल कैमरा बन गया
+  setup_title              CamBridge संस्थापना
+  setup_page1_title        CamBridge — वर्चुअल कैमरा संस्थापना
+  setup_page1_body         CamBridge सामान्य DirectShow कैमरा को उन ऐप्स में दिखाता है जो Media F...
+  setup_page2_title        कैमरा चुनें
+  setup_page3_title        हो गया
+  setup_step               चरण {0} / 3
+  btn_next                 आगे
+  btn_back                 पीछे
+  btn_finish               हो गया
+  inst_mf                  वर्चुअल कैमरा (Media Foundation) स्थापित हो रहा है…
+  inst_done                स्थापित हो गया।
+  err_msi                  वर्चुअल कैमरा घटक स्थापित नहीं हो सका (msiexec कोड {0})।
+  err_vc_download          Visual C++ Runtime डाउनलोड नहीं हो सका। इंटरनेट जाँचें।
+  uninst_title             CamBridge हटाएँ
+  uninst_question          CamBridge हटाएँ?
+  uninst_body              ब्रिज और वर्चुअल कैमरा हटा दिए जाएँगे। कैमरा और उसका ड्राइवर अपरिवर्ति...
+  uninst_error             हटाने में त्रुटि:
+  arp_name                 CamBridge (वर्चुअल कैमरा)
+

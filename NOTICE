@@ -1,0 +1,54 @@
+CamBridge
+Copyright (C) 2026 the CamBridge authors
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version. See LICENSE for the full text.
+
+
+THIRD-PARTY COMPONENTS REDISTRIBUTED INSIDE THE INSTALLER
+========================================================
+
+The CamBridge-Setup.exe installer carries the following components. They are
+separate programs bundled with, not linked into, CamBridge.
+
+---------------------------------------------------------------------------
+1. ffmpeg
+---------------------------------------------------------------------------
+  Download : https://www.gyan.dev/ffmpeg/builds/
+  Build    : gyan.dev ffmpeg-release-essentials
+  License  : GPL-2.0-or-later (ffmpeg itself); the build enables GPL components
+
+  A complete, unmodified copy of ffmpeg.exe is redistributed in the installer.
+  Its license text ships alongside it as ffmpeg\LICENSE.txt.
+
+  ffmpeg is executed as a separate process; no ffmpeg code is linked into
+  CamBridge. CamBridge is itself GPL-3.0, so the combined distribution is
+  compatible either way.
+
+---------------------------------------------------------------------------
+2. LocosLab Virtual Camera
+---------------------------------------------------------------------------
+  Project  : https://github.com/locosmac/virtual-camera
+  Component: LocosLab.MediaSource.dll  (virtual-camera 1.0.0)
+  License  : MIT
+
+  A Media Foundation custom media source built on the MFCreateVirtualCamera
+  API. It is installed by an MSI to
+  "C:\Program Files\LocosLab GmbH\LocosLab Virtual Camera" and registered as
+  an in-process COM server; it is the piece that lets a user-mode application
+  publish frames as a real camera device.
+
+  The license text ships with the installer as LICENSE-locoslab.rtf.
+
+  Modification notice: LocosLab Virtual Camera is used unmodified. CamBridge
+  supplies frames to it through a named pipe using its public .NET API
+  (LocosLab.VirtualCamera). The frame generator that reads from that pipe is
+  the only CamBridge-specific part, and it lives in src\BridgeCore.cs.
+
+---------------------------------------------------------------------------
+3. Windows Media Foundation runtime (not redistributed)
+---------------------------------------------------------------------------
+  The Media Foundation virtual camera API (MFCreateVirtualCamera) is part of
+  Windows itself and is used at run time. No Microsoft binaries are shipped.

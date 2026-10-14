@@ -1,0 +1,27 @@
+# ---- build outputs -------------------------------------------------------
+/dist/
+/stage/
+/_scratch/
+
+# ---- fetched third-party dependencies ------------------------------------
+# fetch-deps.ps1 puts these here; they are downloaded, not committed
+/payload/
+/vc/
+/vc-inspect/
+
+# ---- stray binaries and logs --------------------------------------------
+*.exe
+*.dll
+*.zip
+*.log
+*.bin
+*.msi
+CamBridge.exe.config
+
+# ---- editor / OS ---------------------------------------------------------
+.vs/
+.vscode/
+.idea/
+*.user
+Thumbs.db
+desktop.ini

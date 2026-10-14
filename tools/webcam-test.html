@@ -1,0 +1,59 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>CamBridge - проверка камеры</title>
+<style>
+  body { font: 14px system-ui; background: #111; color: #eee; margin: 0; padding: 16px; }
+  video { width: 640px; max-width: 100%; background: #000; border: 1px solid #444; margin-top: 10px; }
+  select, button { font: 14px system-ui; padding: 6px; margin: 4px 4px 0 0; }
+  #st { margin-top: 10px; color: #8f8; }
+</style>
+<h3>CamBridge - проверка камеры</h3>
+<select id="s"></select>
+<button id="sb">Старт</button>
+<button id="sp">Стоп</button>
+<button id="r">Обновить список</button>
+<div id="st">-</div>
+<video id="v" autoplay playsinline muted></video>
+<script>
+  var v = document.getElementById('v'), s = document.getElementById('s'),
+      st = document.getElementById('st'), stream = null;
+
+  function log(t) { st.textContent = t; }
+
+  async function list() {
+    try {
+      var devs = await navigator.mediaDevices.enumerateDevices();
+      var cams = devs.filter(function (d) { return d.kind === 'videoinput'; });
+      s.innerHTML = '';
+      cams.forEach(function (c, i) {
+        var o = document.createElement('option');
+        o.value = c.deviceId;
+        o.textContent = c.label || ('камера ' + i);
+        s.appendChild(o);
+      });
+      log('камер найдено: ' + cams.length);
+    } catch (e) { log('enumerateDevices: ' + e.message); }
+  }
+
+  async function start() {
+    if (stream) { stream.getTracks().forEach(function (t) { t.stop(); }); stream = null; }
+    var label = s.options[s.selectedIndex] ? s.options[s.selectedIndex].textContent : '';
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({
+        video: { deviceId: s.value ? { exact: s.value } : undefined,
+                 width: { ideal: 640 }, height: { ideal: 480 } }
+      });
+      v.srcObject = stream;
+      log('идёт: ' + label);
+    } catch (e) { log('getUserMedia: ' + e.name + ' - ' + e.message); }
+  }
+
+  document.getElementById('sb').onclick = start;
+  document.getElementById('sp').onclick = function () {
+    if (stream) { stream.getTracks().forEach(function (t) { t.stop(); }); stream = null; }
+    log('остановлено');
+  };
+  document.getElementById('r').onclick = list;
+  navigator.mediaDevices.addEventListener('devicechange', list);
+  list();
+</script>
